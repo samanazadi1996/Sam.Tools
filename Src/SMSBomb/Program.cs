@@ -16,14 +16,7 @@ namespace SMSBomb
         private static int Space = 2;
         static async Task Main(string[] args)
         {
-            if (args.Length > 0)
-            {
-                PhoneNumber = args[0];
-            }
-            else
-            {
-                PhoneNumber = "09304241296";
-            }
+            PhoneNumber = args[0];
 
             Initial();
             await SendRequests();
